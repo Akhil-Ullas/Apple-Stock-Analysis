@@ -60,7 +60,7 @@ def predict_price_on_date(input_date):
 
 # Streamlit
 st.title('MicroSoft Stock Price ($) Predictor(Close Price)')
-st.write('Select the date')
+st.write('LSTM')
 
 date=st.date_input('Select a date')
 
@@ -76,4 +76,4 @@ if st.button('Predict'):
         st.metric(label='Difference',value=f'${diff:.2f}',
                   delta=f'{diff/actual*100:.2f}%')
     else:
-        st.warning('Future date may yeil less accurate value')
+        st.warning('Future date may yeild less accurate value')
